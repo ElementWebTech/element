@@ -1,12 +1,17 @@
 import Nav from "./Nav";
 import Top from "./Top";
+import Benefits from "./Benefits";
+import Services from "./Services";
+import Footer from "./Footer";
 
 const App = () => {
   return (
     <div className="App">
-      <div className="radial-bg"></div>
       <Nav />
       <Top />
+      <Benefits />
+      <Services />
+      <Footer />
     </div>
   );
 };

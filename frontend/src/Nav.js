@@ -7,6 +7,7 @@ const Nav = () => {
       <img src={wolf} alt="wolf logo" style={{ height: 50 }} />
       <p className="logo-text">Element</p>
     </div>
+
   );
 };
 
