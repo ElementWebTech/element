@@ -1,23 +1,96 @@
-import React from "react";
+import React, { useState } from "react";
 import { Instagram, Twitter, Facebook } from "react-bootstrap-icons";
 import star from "./assets/images/star.svg";
+import { Spring, animated } from "react-spring";
+import BezierEasing from "bezier-easing";
 
 const Top = () => {
+  const easing = BezierEasing(0.28, 1.11, 1, 1);
+
   return (
     <div className="top-container">
       <div className="top-contents-wrapper">
         <div className="top-contents">
           <img src={star} alt="star" className="star-front" />
-          <p className="header">
-            <span className="header-bold">Modern</span> Web Development
-          </p>
-          <p className="big-paragraph">
-            Website Design, Website Managament, Search Engine Optimization.
-          </p>
+          <Spring
+            config={{ duration: 1500, easing: easing }}
+            from={{ opacity: 0, transform: "translateX(-500px)" }}
+            delay={300}
+            to={{ opacity: 1, transform: "translateX(0px)" }}
+          >
+            {(styles) => (
+              <animated.p style={styles} className="header">
+                <span className="header-bold">Modern</span> Web Development
+              </animated.p>
+            )}
+          </Spring>
+          <Spring
+            config={{ duration: 1500, easing: easing }}
+            delay={600}
+            from={{ opacity: 0, transform: "translateX(-500px)" }}
+            to={{ opacity: 1, transform: "translateX(0px)" }}
+          >
+            {(styles) => (
+              <animated.p style={styles} className="big-paragraph">
+                Website Design, Website Managament, Search Engine Optimization.
+              </animated.p>
+            )}
+          </Spring>
           <div className="social-icons">
-            <Instagram className="social-icon" size={25} />
-            <Twitter className="social-icon" size={25} />
-            <Facebook className="social-icon" size={25} />
+            <Spring
+              config={{ duration: 500}}
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}
+              delay={1600}
+            >
+              {(styles) => (
+                <animated.a
+                  className="social-icon"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={styles}
+                >
+                  <Instagram size={25} />
+                </animated.a>
+              )}
+            </Spring>
+            <Spring
+              config={{duration: 500}}
+              from={{ opacity: 0}}
+              to={{ opacity: 1 }}
+              delay={1800}
+            >
+              {(styles) => (
+                <animated.a
+                  className="social-icon"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={styles}
+                >
+                  <Twitter size={25} />
+                </animated.a>
+              )}
+            </Spring>
+            <Spring
+              config={{duration: 500}}
+              from={{ opacity: 0 }}
+              to={{ opacity: 1}}
+              delay={2000}
+            >
+              {(styles) => (
+                <animated.a
+                  className="social-icon"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={styles}
+                >
+                  <Facebook size={25} />
+                </animated.a>
+              )}
+            </Spring>
           </div>
         </div>
       </div>

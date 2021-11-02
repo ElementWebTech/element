@@ -83,6 +83,8 @@ body {
 .social-icon {
   cursor: pointer;
   transition: 0.2s all;
+  color: #fff;
+  position: relative;
 }
 
 .social-icon:hover {
@@ -372,6 +374,7 @@ body {
   height: 200px;
   display: block;
   margin: auto;
+  margin-top: -20px;
 }
 
 .portfolio-about-project-container {

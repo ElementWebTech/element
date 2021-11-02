@@ -23,9 +23,7 @@ const Portfolio = () => {
             <img src={computer} alt="computer" className="computer" />
             <p className="portfolio-about-title">Clovers Mini Golden Doodles</p>
             <p className="project-description">
-              We are committed to the idea that a highly proactive and
-              responsive support team can be the secret weapon to meeting all of
-              your needs.
+              This site was made to show info about the clients dogs & puppies so they could be sold.
             </p>
             <div className="btn-container">
               <a
