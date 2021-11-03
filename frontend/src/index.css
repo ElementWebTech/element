@@ -412,3 +412,53 @@ body {
 .hollow-btn:hover {
   opacity: 100%;
 }
+
+@media only screen and (max-width: 500px) {
+  .header {
+    font-size: 200%;
+  }
+  .big-paragraph {
+    font-size: 100%;
+  }
+  .benefit-flex-container {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .benefit-img {
+    height: 350px;
+    margin: auto;
+  }
+  .benefit-sub-title {
+    padding-top: 50px;
+  }
+  .stat-data-container {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .stat-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .service-flex-container {
+    flex-direction: column;
+  }
+  .service-main {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .portfolio-flex-container {
+    flex-direction: column;
+  }
+  .img-portfolio-container {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .contact-flex-container {
+    flex-direction: column;
+  }
+  .contact-method-container {
+    margin-right: 0px;
+    margin-bottom: 10px;
+    min-height: 330px;
+  }
+}

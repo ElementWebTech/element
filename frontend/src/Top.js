@@ -11,7 +11,16 @@ const Top = () => {
     <div className="top-container">
       <div className="top-contents-wrapper">
         <div className="top-contents">
-          <img src={star} alt="star" className="star-front" />
+          <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={2700}>
+            {(styles) => (
+              <animated.img
+                src={star}
+                style={styles}
+                alt="star"
+                className="star-front"
+              />
+            )}
+          </Spring>
           <Spring
             config={{ duration: 1500, easing: easing }}
             from={{ opacity: 0, transform: "translateX(-500px)" }}
@@ -38,7 +47,7 @@ const Top = () => {
           </Spring>
           <div className="social-icons">
             <Spring
-              config={{ duration: 500}}
+              config={{ duration: 500 }}
               from={{ opacity: 0 }}
               to={{ opacity: 1 }}
               delay={1600}
@@ -56,8 +65,8 @@ const Top = () => {
               )}
             </Spring>
             <Spring
-              config={{duration: 500}}
-              from={{ opacity: 0}}
+              config={{ duration: 500 }}
+              from={{ opacity: 0 }}
               to={{ opacity: 1 }}
               delay={1800}
             >
@@ -74,9 +83,9 @@ const Top = () => {
               )}
             </Spring>
             <Spring
-              config={{duration: 500}}
+              config={{ duration: 500 }}
               from={{ opacity: 0 }}
-              to={{ opacity: 1}}
+              to={{ opacity: 1 }}
               delay={2000}
             >
               {(styles) => (
