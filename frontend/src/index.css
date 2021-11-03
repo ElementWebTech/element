@@ -257,9 +257,7 @@ body {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  background-image: url("./assets/images/service-bg.jpg");
-  background-color: #00000093;
-  background-blend-mode: multiply;
+  background-image: linear-gradient(#00000093,#00000093),url("./assets/images/service-bg.jpg");
   background-position: center;
   background-size: cover;
   margin-right: 10px;
@@ -431,11 +429,9 @@ body {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  background-image: url("./assets/images/clover.jpg");
+  background-image: linear-gradient(#0000009d,#0000009d),url("./assets/images/clover.jpg");
   background-position: center;
   background-size: cover;
-  background-color: #0000009d;
-  background-blend-mode: multiply;
   -webkit-box-flex: 2;
   -ms-flex: 2;
   flex: 2;
@@ -550,6 +546,6 @@ body {
   .contact-method-container {
     margin-right: 0px;
     margin-bottom: 10px;
-    min-height: 330px;
+    min-height: 375px;
   }
 }
