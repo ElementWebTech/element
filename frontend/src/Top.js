@@ -55,12 +55,12 @@ const Top = () => {
               {(styles) => (
                 <animated.a
                   className="social-icon"
-                  href="#"
+                  href="https://www.instagram.com/elementwebtech"
                   target="_blank"
                   rel="noreferrer"
                   style={styles}
                 >
-                  <Instagram size={25} />
+                  <Instagram size={25} className="instagram"/>
                 </animated.a>
               )}
             </Spring>
@@ -73,12 +73,12 @@ const Top = () => {
               {(styles) => (
                 <animated.a
                   className="social-icon"
-                  href="#"
+                  href="https://www.twitter.com/elementwebtech"
                   target="_blank"
                   rel="noreferrer"
                   style={styles}
                 >
-                  <Twitter size={25} />
+                  <Twitter size={25} className="twitter"/>
                 </animated.a>
               )}
             </Spring>
@@ -91,12 +91,12 @@ const Top = () => {
               {(styles) => (
                 <animated.a
                   className="social-icon"
-                  href="#"
+                  href="https://www.facebook.com/elementwebtech"
                   target="_blank"
                   rel="noreferrer"
                   style={styles}
                 >
-                  <Facebook size={25} />
+                  <Facebook size={25} className="facebook"/>
                 </animated.a>
               )}
             </Spring>
