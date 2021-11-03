@@ -548,4 +548,7 @@ body {
     margin-bottom: 10px;
     min-height: 375px;
   }
+  .contact-email {
+    font-size: 80%;
+  }
 }

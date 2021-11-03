@@ -42,7 +42,7 @@ const Contact = () => {
             </p>
             <p className="contact-paragraph">
               <Envelope style={{ position: "relative", top: 3 }} />{" "}
-              <span style={{ paddingLeft: 10 }}>
+              <span style={{ paddingLeft: 10 }} className="contact-email">
                 rmthomas@elementwebtech.io
               </span>
             </p>
