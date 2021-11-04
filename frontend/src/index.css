@@ -12,6 +12,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -27,14 +34,14 @@ body {
 }
 
 :root {
-  --pink: #ff1f8bc0;
-  --purple: #bb00ff79;
+  --pink: #ff1f8b;
+  --purple: #bb00ff;
   --green: #00e1ff0e;
   --background: #090b18;
 }
 
 .nav-container {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 0;
   -webkit-transform: translateX(-50%);
@@ -49,6 +56,21 @@ body {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  z-index: 9999;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.nav-container-active {
+  border-bottom: 1px solid #ffffff2f;
+  padding: 15px 30px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .logo-text {
@@ -57,13 +79,62 @@ body {
   text-transform: uppercase;
 }
 
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  margin-right: 30px;
+  text-decoration: none;
+  background: -o-linear-gradient(150deg, var(--pink), var(--purple));
+  background: linear-gradient(300deg, var(--pink), var(--purple));
+  padding: 8px 20px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  font-size: 75%;
+  font-weight: 500;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.contact-link:last-of-type {
+  margin-right: 0;
+}
+
+.contact-link:hover {
+  border: 1px solid #fff;
+}
+
+.phone-number,
+.email {
+  margin-left: 10px;
+}
+
 .top-container {
   height: 100vh;
   background-image: -o-linear-gradient(#090b185b, #090b18),
     url("./assets/images//bg.jpg");
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#090b185b), to(#090b18)),
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#090b1883),
+      to(#090b18)
+    ),
     url("./assets/images//bg.jpg");
-  background-image: linear-gradient(#090b185b, #090b18),
+  background-image: -o-linear-gradient(#090b1883, #090b18),
+    url("./assets/images//bg.jpg");
+  background-image: linear-gradient(#090b1883, #090b18),
     url("./assets/images//bg.jpg");
   background-position: center;
   background-size: cover;
@@ -123,10 +194,16 @@ body {
 
 .facebook,
 .twitter,
-.instagram { transition: 0.2s all ; -webkit-transition: 0.2s all ; -moz-transition: 0.2s all ; -ms-transition: 0.2s all ; -o-transition: 0.2s all ; }
+.instagram {
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+  -ms-transition: 0.2s all;
+  -o-transition: 0.2s all;
+}
 
 .facebook:hover {
-  color:  #1877f2;
+  color: #1877f2;
 }
 
 .twitter:hover {
@@ -134,7 +211,7 @@ body {
 }
 
 .instagram:hover {
-  color:#c32aa3;
+  color: #c32aa3;
 }
 
 .star-front {
@@ -269,7 +346,18 @@ body {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  background-image: linear-gradient(#00000093,#00000093),url("./assets/images/service-bg.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#00000093),
+      to(#00000093)
+    ),
+    url("./assets/images/service-bg.jpg");
+  background-image: -o-linear-gradient(#00000093, #00000093),
+    url("./assets/images/service-bg.jpg");
+  background-image: linear-gradient(#00000093, #00000093),
+    url("./assets/images/service-bg.jpg");
   background-position: center;
   background-size: cover;
   margin-right: 10px;
@@ -296,6 +384,13 @@ body {
   margin-bottom: 10px;
 }
 
+.service-sub-service-paragraph {
+  opacity: 0.6;
+  font-size: 80%;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
 .service-sub:last-of-type {
   margin-bottom: 0;
 }
@@ -306,14 +401,6 @@ body {
   font-size: 120%;
   font-weight: 400;
   padding-bottom: 10px;
-}
-
-.service-sub-service-paragraph,
-.contact-paragraph {
-  font-weight: 400;
-  font-size: 80%;
-  opacity: 0.6;
-  line-height: 150%;
 }
 
 .footer-container {
@@ -363,35 +450,12 @@ body {
   padding-bottom: 100px;
 }
 
-.contact-flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 10px;
-}
-
-.contact-method-container {
-  padding: 30px 30px;
-  border: 1px solid #ffffff33;
-  border-radius: 20px;
-  background: #ffffff05;
-  margin-right: 10px;
-  width: 100%;
-  position: relative;
-  min-height: 370px;
-  min-width: 300px;
-}
-
-.contact-method-container:last-of-type {
-  margin-right: 0;
-}
-
 .btn {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
   font-size: 80%;
-  padding: 12px 24px;
+  padding: 8px 24px;
   border-radius: 12px;
   background: -o-linear-gradient(45deg, var(--purple), var(--pink));
   background: linear-gradient(45deg, var(--purple), var(--pink));
@@ -403,11 +467,6 @@ body {
 
 .btn:hover {
   opacity: 1;
-}
-
-.contact-btn {
-  position: absolute;
-  bottom: 30px;
 }
 
 .portfolio-container {
@@ -437,7 +496,18 @@ body {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  background-image: linear-gradient(#0000009d,#0000009d),url("./assets/images/clover.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#0000009d),
+      to(#0000009d)
+    ),
+    url("./assets/images/clover.jpg");
+  background-image: -o-linear-gradient(#0000009d, #0000009d),
+    url("./assets/images/clover.jpg");
+  background-image: linear-gradient(#0000009d, #0000009d),
+    url("./assets/images/clover.jpg");
   background-position: center;
   background-size: cover;
   -webkit-box-flex: 2;
@@ -479,18 +549,27 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 80%;
-  padding: 12px 24px;
+  padding: 9px 24px;
   border-radius: 12px;
-  opacity: 0.8;
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
   border: 1px solid #ffffff33;
-  background: #ffffff1c;
+  background: #ffffff15;
 }
 
 .hollow-btn:hover {
-  opacity: 1;
+  border: 1px solid var(--pink);
+}
+
+@media only screen and (max-width: 1000px) {
+  .email,
+  .phone-number {
+    display: none;
+  }
+  .contact-link:first-of-type {
+    margin-right: 15px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -544,19 +623,5 @@ body {
   .img-portfolio-container {
     margin-right: 0;
     margin-bottom: 10px;
-  }
-  .contact-flex-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .contact-method-container {
-    margin-right: 0px;
-    margin-bottom: 10px;
-    min-height: 375px;
-  }
-  .contact-email {
-    font-size: 80%;
   }
 }

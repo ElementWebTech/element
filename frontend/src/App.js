@@ -5,11 +5,14 @@ import Services from "./Services";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import useScrollPosition from "@react-hook/window-scroll";
 
 const App = () => {
+  const scrollPos = useScrollPosition(60);
+
   return (
     <div className="App">
-      <Nav />
+      <Nav scrollPos={scrollPos} />
       <Top />
       <Benefits />
       <Services />
