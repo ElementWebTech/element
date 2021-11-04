@@ -10,7 +10,7 @@ const Contact = () => {
           <ArrowRight size={15} />
         </p>
         <div className="contact-flex-container">
-          <div className="contact-method-container">
+          <div className="contact-method-container" style={{background: 'radial-gradient(#ff1f8b50,#ff1f8b0a)'}}>
             <p className="contact-title" style={{ paddingBottom: 15 }}>
               Phone
             </p>
@@ -31,7 +31,7 @@ const Contact = () => {
               Call now
             </a>
           </div>
-          <div className="contact-method-container">
+          <div className="contact-method-container" style={{background: 'radial-gradient(#bb00ff50,#bb00ff0a)'}}>
             <p className="contact-title" style={{ paddingBottom: 15 }}>
               Email
             </p>
@@ -42,7 +42,7 @@ const Contact = () => {
             </p>
             <p className="contact-paragraph">
               <Envelope style={{ position: "relative", top: 3 }} />{" "}
-              <span style={{ paddingLeft: 10 }}>
+              <span style={{ paddingLeft: 10 }} className="contact-email">
                 rmthomas@elementwebtech.io
               </span>
             </p>
@@ -53,7 +53,7 @@ const Contact = () => {
               Email now
             </a>
           </div>
-          <div className="contact-method-container">
+          <div className="contact-method-container" style={{background: 'radial-gradient(#00e1ff50,#00e1ff0a)'}}>
             <p className="contact-title" style={{ paddingBottom: 15 }}>
               Live Chat
             </p>
