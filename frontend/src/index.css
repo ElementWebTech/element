@@ -19,6 +19,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -124,6 +131,8 @@ body {
   height: 100vh;
   background-image: -o-linear-gradient(#090b185b, #090b18),
     url("./assets/images//bg.jpg");
+  background-image: -o-linear-gradient(#090b1883, #090b18),
+    url("./assets/images//bg.jpg");
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -131,8 +140,6 @@ body {
       from(#090b1883),
       to(#090b18)
     ),
-    url("./assets/images//bg.jpg");
-  background-image: -o-linear-gradient(#090b1883, #090b18),
     url("./assets/images//bg.jpg");
   background-image: linear-gradient(#090b1883, #090b18),
     url("./assets/images//bg.jpg");
@@ -346,6 +353,8 @@ body {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  background-image: -o-linear-gradient(#00000093, #00000093),
+    url("./assets/images/service-bg.jpg");
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -353,8 +362,6 @@ body {
       from(#00000093),
       to(#00000093)
     ),
-    url("./assets/images/service-bg.jpg");
-  background-image: -o-linear-gradient(#00000093, #00000093),
     url("./assets/images/service-bg.jpg");
   background-image: linear-gradient(#00000093, #00000093),
     url("./assets/images/service-bg.jpg");
@@ -496,6 +503,8 @@ body {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  background-image: -o-linear-gradient(#0000009d, #0000009d),
+    url("./assets/images/clover.jpg");
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -503,8 +512,6 @@ body {
       from(#0000009d),
       to(#0000009d)
     ),
-    url("./assets/images/clover.jpg");
-  background-image: -o-linear-gradient(#0000009d, #0000009d),
     url("./assets/images/clover.jpg");
   background-image: linear-gradient(#0000009d, #0000009d),
     url("./assets/images/clover.jpg");
@@ -623,5 +630,8 @@ body {
   .img-portfolio-container {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+  .logo-text {
+    opacity: 0;
   }
 }
