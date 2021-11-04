@@ -457,6 +457,55 @@ body {
   padding-bottom: 100px;
 }
 
+form {
+  padding-top: 10px;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.name-input-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fname-input {
+  margin-right: 10px;
+}
+
+.input-container {
+  width: 100%;
+  position: relative;
+}
+
+input {
+  background: #ffffff05;
+  border-radius: 12px;
+  border: 1px solid #ffffff33;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  font-size: 80%;
+}
+
+label {
+  position: absolute;
+  font-size: 80%;
+  left: 18px;
+  top: 21%;
+  transform: translateY(-21%);
+  pointer-events: none;
+}
+
+.error-message {
+  margin-bottom: 20px;
+}
+
 .btn {
   color: #fff;
   text-decoration: none;

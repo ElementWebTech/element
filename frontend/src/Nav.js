@@ -4,7 +4,9 @@ import { Envelope, Telephone } from "react-bootstrap-icons";
 
 const Nav = ({ scrollPos }) => {
   return (
-    <div className={`nav-container ${scrollPos > 0 && "nav-container-active"}`}>
+    <div
+      className={`nav-container ${scrollPos > 0 ? "nav-container-active" : ""}`}
+    >
       <div style={{ display: "flex", alignItems: "center" }}>
         <img src={wolf} alt="wolf logo" style={{ height: 50 }} />
         <p className="logo-text">Element</p>
