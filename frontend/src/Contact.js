@@ -13,7 +13,7 @@ const Contact = () => {
           <div className="name-input-container">
             <div className="input-container fname-input">
               <label>First Name</label>
-              <input type="text" name="fname" />
+              <input type="text" name="fname" placeholder="First Name"/>
               <p className="error-message">error</p>
             </div>
             <div className="input-container">

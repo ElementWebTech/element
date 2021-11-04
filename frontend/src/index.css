@@ -458,7 +458,7 @@ body {
 }
 
 form {
-  padding-top: 10px;
+  padding-top: 30px;
   max-width: 600px;
   margin: auto;
   display: flex;
@@ -471,7 +471,6 @@ form {
 .name-input-container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
 }
 
 .fname-input {
@@ -480,7 +479,6 @@ form {
 
 .input-container {
   width: 100%;
-  position: relative;
 }
 
 input {
@@ -488,22 +486,23 @@ input {
   border-radius: 12px;
   border: 1px solid #ffffff33;
   width: 100%;
-  padding: 15px;
+  padding: 12px;
   color: #fff;
   font-size: 80%;
+  outline: none;
 }
 
 label {
-  position: absolute;
+  padding-left: 5px;
   font-size: 80%;
-  left: 18px;
-  top: 21%;
-  transform: translateY(-21%);
-  pointer-events: none;
+  font-weight: 400;
 }
 
 .error-message {
   margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 70%;
+  padding-left: 10px;
 }
 
 .btn {
