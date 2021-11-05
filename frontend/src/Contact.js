@@ -13,24 +13,24 @@ const Contact = () => {
           <div className="name-input-container">
             <div className="input-container fname-input">
               <label>First Name</label>
-              <input type="text" name="fname" placeholder="First Name"/>
-              <p className="error-message">error</p>
+              <input type="text" name="fname" placeholder="First Name" />
+              <p className="error-message"></p>
             </div>
             <div className="input-container">
               <label>Last Name</label>
               <input type="text" name="lname" />
-              <p className="error-message">error</p>
+              <p className="error-message"></p>
             </div>
           </div>
           <div className="input-container">
             <label>Phone</label>
             <input type="tel" name="phone" />
-            <p className="error-message">error</p>
+            <p className="error-message"></p>
           </div>
           <div className="input-container">
             <label>Email</label>
             <input type="email" name="email" />
-            <p className="error-message">error</p>
+            <p className="error-message"></p>
           </div>
           <div className="input-container">
             <label>Message</label>
