@@ -18,23 +18,23 @@ const Contact = () => {
             </div>
             <div className="input-container">
               <label>Last Name</label>
-              <input type="text" name="lname" />
+              <input type="text" name="lname" placeholder="Last Name" />
               <p className="error-message"></p>
             </div>
           </div>
           <div className="input-container">
             <label>Phone</label>
-            <input type="tel" name="phone" />
+            <input type="tel" name="phone" placeholder="Phone" />
             <p className="error-message"></p>
           </div>
           <div className="input-container">
             <label>Email</label>
-            <input type="email" name="email" />
+            <input type="email" name="email" placeholder="Email" />
             <p className="error-message"></p>
           </div>
           <div className="input-container">
             <label>Message</label>
-            <textarea name="email" />
+            <textarea name="message" placeholder="Your Message" />
             <p className="error-message">error</p>
           </div>
           <button type="submit">Send Message</button>

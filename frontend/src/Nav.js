@@ -18,7 +18,7 @@ const Nav = ({ scrollPos }) => {
         </a>
         <a href="mailto:rmthomas@elementwebtech.io" className="contact-link">
           <Envelope />
-          <span className="email">rmthomas@elementwebtech.io</span>
+          <span className="email">ryanmthomas01@gmail.com</span>
         </a>
       </div>
     </div>
