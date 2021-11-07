@@ -16,7 +16,7 @@ const Nav = ({ scrollPos }) => {
           <Telephone />
           <span className="phone-number">(937)-321-8714</span>
         </a>
-        <a href="mailto:rmthomas@elementwebtech.io" className="contact-link">
+        <a href="mailto:ryanmthomas01@gmail.com" className="contact-link">
           <Envelope />
           <span className="email">ryanmthomas01@gmail.com</span>
         </a>
