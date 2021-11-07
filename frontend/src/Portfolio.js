@@ -21,10 +21,11 @@ const Portfolio = () => {
           </div>
           <div className="portfolio-about-project-container">
             <img src={computer} alt="computer" className="computer" />
-            {/* <p className="portfolio-about-title">Clovers Mini Golden Doodles</p> */}
+            <p className="portfolio-about-title">Clovers Mini Golden Doodles</p>
             <p className="project-description">
-              This site was made to show info about the clients dogs & puppies
-              so they could be sold.
+              This site was made to show info about the clients puppies so they
+              could be sold. They asked for pictures of the dogs to be on
+              display as well as all of the info abou them.
             </p>
             <div className="btn-container">
               <a
